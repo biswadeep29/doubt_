@@ -1,12 +1,10 @@
 import streamlit as st
 import openai
-import os
 
-openai_api_key = os.environ.get("OPENAI_API_KEY")
 
 client = openai.Client(
     base_url="https://openrouter.ai/api/v1",
-  api_key= openai_api_key,
+  api_key= "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",
 )
 
 st.title("Student Doubt Solver")
