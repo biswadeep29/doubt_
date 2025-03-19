@@ -1,5 +1,8 @@
 import streamlit as st
 from openai import OpenAI
+import os
+
+openai_api_key = os.environ.get("OPENAI_API_KEY")
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
