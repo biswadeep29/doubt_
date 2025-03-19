@@ -1,6 +1,6 @@
 import streamlit as st
 from openai import OpenAI
-from OpenAI_api_key import openai_api_key
+
 
 
 st.title("Student Doubt Solver")
