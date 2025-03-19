@@ -1,13 +1,11 @@
 import streamlit as st
-from openai import OpenAI
-
-
+import openai
 
 st.title("Student Doubt Solver")
 
-client = OpenAI(
+client = openai.Client(
     base_url="https://openrouter.ai/api/v1",
-  api_key= openai_api_key,
+    api_key=openai_api_key,
 )
 
 def doubt_solver(student_class,subject_name,student_doubt):
