@@ -4,7 +4,7 @@ import openai
 
 client = openai.Client(
     base_url="https://openrouter.ai/api/v1",
-  api_key= "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",
+  api_key= open_ai_key,
 )
 
 st.title("Student Doubt Solver")
